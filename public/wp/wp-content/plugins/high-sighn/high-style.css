@@ -1,0 +1,50 @@
+/***
+	*
+	* Custom CSS for this plugin
+	*
+***/
+
+.high-form-wrap {
+    position: fixed;
+    top: 22%;
+	left: 33%;
+    background-color: #5bb959b3;
+    width: 45vw;
+    height: 200px;
+    padding: 1em;
+	z-index: 99;
+}
+
+
+form{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="url"], 
+input[type="password"], 
+input[type="search"], 
+input[type="number"], 
+input[type="tel"], 
+input[type="range"], 
+input[type="date"], 
+input[type="month"], 
+input[type="week"], 
+input[type="time"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="color"], textarea{
+	max-width: 50%;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+
+h3 {
+    text-align: center;
+}
