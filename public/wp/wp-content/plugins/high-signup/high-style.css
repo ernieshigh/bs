@@ -12,9 +12,16 @@
     width: 45vw;
     height: auto;
     padding: 1em;
+	 box-shadow: 0 0 10px #000000;
 	z-index: 99;
 }
 
+#scroll-block.hidden{
+	visibility: hidden !important;
+	display: none !important;
+	height: 0;
+	width: 0;
+}
 
 #scroll-block form{
 	display: flex;

@@ -16,12 +16,12 @@ function high_signup($content) {
   
   
  
-$content .= '<div id="scroll-block" class="high-form-wrap" style="display: none;">';
+$content .= '<div id="scroll-block" class="high-form-wrap" style="display: none;" >';
 $content .= '<h3> Hey Sign up</h3>';
-$content .= '<form method="POST" action="" class="high-form">';
+$content .= '<form method="POST" action="" class="high-form" id="add_user">';
 $content .= '<input type="text" name="high_name"/>';
 $content .= '<input type="email" name="high_email">';
-$content .= '<input type="submit" value="Sign me up now!" name="high_submit">';
+$content .= '<input type="submit" value="Sign me up now!" name="high_submit" onclick="hide_form()">';
 $content .= '</form>';
 $content .= '</div>';
  
@@ -42,3 +42,9 @@ add_action( 'wp_enqueue_scripts', 'high_enqueue' );
 
 
 include( plugin_dir_path( __FILE__ ) . 'high-functions.php');
+
+
+function referral_activation(){ 
+    high_create_table();
+} 
+register_activation_hook( __FILE__, 'referral_activation');

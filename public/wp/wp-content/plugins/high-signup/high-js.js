@@ -4,6 +4,11 @@
 	*
 **/
 
+function hide_form(){ 
+ 
+		document.getElementById("scroll-block").classList.add("hidden");
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 	 
 	window.addEventListener('scroll', function() { 
@@ -15,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		 
 	});
+	
+	
+	  document.forms['add_user'].addEventListener('submit', function (event) {  
+			document.getElementsByClassName('high-form-wrap').removeAttribute('id');
+            event.preventDefault(); 
+        });
 
 
 })
