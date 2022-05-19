@@ -15,11 +15,11 @@ public/content/mu-plugins/*
 # version control, add an exception here. Exceptions will look like this:
 #   !public/content/plugins/plugin-folder
 
-!public/wp/wp-config.php
-!public/wp/wp-content/plugins/index.php
-!public/wp/wp-content/themes/index.php
-!public/wp/wp-content/mu-plugins/index.php
-!public/wp/wp-content/mu-plugins/register-theme-directory.php
+#!public/wp/wp-content/mu-plugins/register-theme-directory.php
+#!public/wp/wp-config.php
+#!public/wp/wp-content/plugins/index.php
+#!public/wp/wp-content/themes/index.php
+#!public/wp/wp-content/mu-plugins/index.php
 
 # Ignore the local config
 public/local-config.php
