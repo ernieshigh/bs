@@ -21,7 +21,7 @@ $content .= '<h3> Hey Sign up</h3>';
 $content .= '<form method="POST" action="" class="high-form">';
 $content .= '<input type="text" name="high_name"/>';
 $content .= '<input type="email" name="high_email">';
-$content .= '<input type="submit" value="Sign me up now!" id="high_submit">';
+$content .= '<input type="submit" value="Sign me up now!" name="high_submit">';
 $content .= '</form>';
 $content .= '</div>';
  
@@ -39,3 +39,6 @@ function high_enqueue() {
 }
 
 add_action( 'wp_enqueue_scripts', 'high_enqueue' );
+
+
+include( plugin_dir_path( __FILE__ ) . 'high-functions.php');
