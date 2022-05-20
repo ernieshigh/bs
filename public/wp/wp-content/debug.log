@@ -1,0 +1,8 @@
+[19-May-2022 05:44:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TABLE wp_subscribers (
+        id mediumint(9) NOT NULL AUTO_INCREMENT,
+      ' at line 1 for query CREATE TABLE IF NOT EXISTS TABLE wp_subscribers (
+        id mediumint(9) NOT NULL AUTO_INCREMENT,
+        sub_name text NOT NULL,
+        sub_email varchar(200) NOT NULL, 
+        PRIMARY KEY  (id)
+    ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; made by activate_plugin, do_action('activate_high-signup/high-signup.php'), WP_Hook->do_action, WP_Hook->apply_filters, referral_activation, high_create_table
